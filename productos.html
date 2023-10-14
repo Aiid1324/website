@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div>
+            <a href="../index.html"><img id="logo-pagina" src="../imagenes/logo_transparent.png" alt="Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul class="lista">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a class="activo" href="productos.html">Productos</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>   
+        </nav>
+        <div></div>
+    </header>
+    <main>
+        <div class="ful-img" id="fulImgBox">
+            <img src="../imagenes/galeria-cocina.jpg" id="fulImg" alt="">
+            <span onclick="closeImg()"> X </span>
+        </div>
+
+
+        <h1>Productos</h1>
+        <section id="galeria">
+            <h2>Productos</h2>
+            <figure class="galeria_img">
+                <img src="../imagenes/galeria-cocina.jpg" onclick="openFulImg(this.src)" alt="">
+                <figcaption>Cocina</figcaption>
+            </figure>            
+            <figure class="galeria_img">
+                <img src="../imagenes/galeria-comedor.jpg" onclick="openFulImg(this.src)" alt="">
+                <figcaption>Comedor</figcaption>
+            </figure>
+            <figure class="galeria_img">
+                <img src="../imagenes/galeria-salon.jpg" onclick="openFulImg(this.src)" alt="">
+                <figcaption>Sala de estar</figcaption>
+            </figure>
+            <figure class="galeria_img">
+                <img src="../imagenes/galeria-dormitorio.jpg" onclick="openFulImg(this.src)" alt="">
+                <figcaption>Dormitorio</figcaption>
+            </figure>
+            <figure class="galeria_img">
+                <img src="../imagenes/galeria-baño.jpg" onclick="openFulImg(this.src)" alt="">
+                <figcaption>Baño</figcaption>
+            </figure>
+            <figure class="galeria_img">
+                <img src="../imagenes/galeria-decoracion.jpg" onclick="openFulImg(this.src)" alt="">
+                <figcaption>Decoración</figcaption>
+            </figure>
+            <figure class="galeria_img">
+                <img src="../imagenes/galeria-restaurados.jpg" onclick="openFulImg(this.src)" alt="">
+                <figcaption>Elementos restaurados</figcaption>
+            </figure>
+            <figure class="galeria_img">
+                <img src="../imagenes/galeria-personalizado.jpg" onclick="openFulImg(this.src)" alt="">
+                <figcaption>Diseños a medida</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer >
+        <div id="pie">
+            <p>Visita nuestas instalaciones en: </p><address>calle de San Roque, 17 08001 Barcelona España</address>
+            <p>Contacta con nosotros y sigue nuestras novedades:</p>
+            <div id="logos">
+                <img class="logo" src="../imagenes/logo-facebook.png" alt="Logo facebook">
+                <img class="logo" src="../imagenes/logo-instagram.png" alt="Logo instagram">
+                <img class="logo" src="../imagenes/logo-whatsapp.png" alt="Logo whatsapp">
+                <img class="logo" src="../imagenes/logo-twitter.png" alt="Logo twitter">
+            </div>
+            <p id="aviso-legal">Esta obra está bajo una <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">licencia de Creative Commons  </a></p>
+            <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" alt="imagen-creative"></a>
+        </div>
+    </footer>
+    <script src="../js/galeria.js"></script>
+</body>
+</html>

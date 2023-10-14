@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div>
+            <a href="../index.html"><img id="logo-pagina" src="../imagenes/logo_transparent.png" alt="Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul class="lista">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a class="activo" href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>   
+        </nav>
+        <div></div>
+    </header>
+    <main>
+        <h1>Solicitud de presupuesto</h1>
+        <section id="presupuesto">
+            <h2>Solicitud de presupuesto</h2>
+            <form id="formulario" action="#">
+                <div class="elemento-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input class="entrada" type="text" id="nombre" name="nombre" >
+                    <p id="errorNombre" class="mensaje-error"></p> <!--agrega mensaje de error si el nombre no es valido -->
+                </div>
+                <div class="elemento-formulario">
+                    <label for="apellidos">Apellidos:</label>
+                    <input class="entrada" type="text" id="apellidos" name="apellidos" >
+                    <p id="errorEpellidos" class="mensaje-error"></p> <!-- agrega mensaje de error si el nombre no es valido -->
+
+                </div>
+                <div class="elemento-formulario">
+                    <label for="email">e-mail:</label>
+                    <input  class="entrada" type="email" id="email" name="email" >
+                    <p id="errorEmail" class="mensaje-error"></p> <!-- agrega mensaje de error si el nombre no es valido -->
+
+                </div>
+                <div class="elemento-formulario">
+                    <label for="telefono">Teléfono:</label>
+                    <input class="entrada" type="tel" id="telefono" name="telefono" >
+                    <p id="errorTelefono" class="mensaje-error"></p> <!-- agrega mensaje de error si el nombre no es valido -->
+
+                </div>
+                <div class="elemento-formulario">
+                    <label for="categoria">Seleccione categoría:</label><br>
+                    <select class="entrada" id="categoria">
+                        <option class="entrada" value="opcion">Seleccione categoría</option>
+                        <option class="entrada" value="cocina">Cocina</option>
+                        <option class="entrada" value="comedor">Comedor</option>
+                        <option class="entrada" value="sala-estar">Sala de estar</option>
+                        <option class="entrada" value="dormitorio">Dormitorio</option>
+                        <option class="entrada" value="banio">Baño</option>
+                        <option class="entrada" value="decoracion">Decoracion</option>
+                    </select>                 
+                </div>
+                <div class="elemento-formulario">
+                    <label for="plazo">Plazo de entrega (días naturales): </label>
+                    <input class="entrada" type="number" id="plazo" min="1">
+                </div> 
+                <div class="elemento-formulario">
+                    <label>Seleccione extras:</label>
+                    <div class="elemento-check">
+                        <input type="checkbox" id="medidas-especiales" name="medidas-especiales">
+                        <label for="medidas-especiales">Medidas especiales</label><br>
+                        <input type="checkbox" id="color" name="color">
+                        <label for="color">Color personalizado</label><br>
+                        <input type="checkbox" id="restaurados" name="restaurados">
+                        <label for="restaurados">Elementos restaurados</label><br>
+                    </div>
+                </div> 
+                <div class="elemento-formulario">
+                    <label >Presupuesto estimado:</label>
+                    <p id="estimado"></p>
+                </div> 
+                <div class="elemento-texto">
+                    <label for="informacion">Solicite más información:</label>
+                    <textarea id="informacion" name="informacion" placeholder="Especifique los detalles del proyecto para el que quiere obtener el presupuesto..."></textarea>
+                </div>
+                <div class="elemento-check">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto la política de privacidad.</label>
+                </div>
+                <div class="elemento-boton">
+                    <button class="boton" type="submit">Enviar</button><br>
+                    <p class="entrada" id="mensaje-envio"></p>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    <footer >
+        <div id="pie">
+            <p>Visita nuestas instalaciones en: </p><address>calle de San Roque, 17 08001 Barcelona España</address>
+            <p>Contacta con nosotros y sigue nuestras novedades:</p>
+            <div id="logos">
+                <img class="logo" src="../imagenes/logo-facebook.png" alt="Logo facebook">
+                <img class="logo" src="../imagenes/logo-instagram.png" alt="Logo instagram">
+                <img class="logo" src="../imagenes/logo-whatsapp.png" alt="Logo whatsapp">
+                <img class="logo" src="../imagenes/logo-twitter.png" alt="Logo twitter">
+            </div>
+            <p id="aviso-legal">Esta obra está bajo una <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">licencia de Creative Commons  </a></p>
+            <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" alt="imagen-creative"></a>
+        </div>
+    </footer>
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../js/contacto.js"></script>
+</head>
+<body>
+    <header class="encabezado">
+        <div>
+            <a href="../index.html"><img id="logo-pagina" src="../imagenes/logo_transparent.png" alt="Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul class="lista">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a class="activo" href="contacto.html">Contacto</a></li>
+            </ul>   
+        </nav>
+        <div></div>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <section id="seccion-contacto">
+
+            <!-- Mostramos mapa en la pestaña contacto con el marcador de la ubicación -->
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2086.759985529348!2d2.145689126286126!3d41.37301310921761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a278881e0d43%3A0x419ca6796aebba27!2sC.%20de%20San%20Roque%2C%2017%2C%2008014%20Barcelona!5e0!3m2!1ses!2ses!4v1676805888537!5m2!1ses!2ses" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div id="info-empresa">
+                <h2>Espacios Únicos, SLU</h2>
+                <h3>Visite nuestro local:</h3>
+                <address>calle de San Roque, 17 <br>08001 Barcelona España</address>
+                <h3>Contacte con nosotros:</h3>
+                    <a href="mailto:informacion@espaciosunicos.com">informacion@mejoresespacios.com</a><br>
+                    <a href="tel:+34600700800">Tlf. +34 636 039 465 </a>
+                <h3>Horario:</h3>
+                Lunes - Viernes: 10:00 - 15:00, 16:00 - 20:00
+                <p></p>
+                <!-- Para calcular la ruta utilizamos openStreetMaps: insertamos botón y abrimos en una pestaña nueva -->
+                <form id="formulario_rutas" method="get" action="https://www.openstreetmap.org/directions?engine=fossgis_osrm_car" target="_blank">    
+                    <input id="coordenadas" type="hidden" name="route" value="">
+                    <input id="calcular_ruta" type="button" value="Cómo llegar">
+                </form>
+              </div>
+
+
+        </section>
+    </main>
+    <footer >
+        <div id="pie">
+            <p>Visita nuestas instalaciones en: </p><address>calle de San Roque, 17 08001 Barcelona España</address>
+            <p>Contacta con nosotros y sigue nuestras novedades:</p>
+            <div id="logos">
+                <img class="logo" src="../imagenes/logo-facebook.png" alt="Logo facebook">
+                <img class="logo" src="../imagenes/logo-instagram.png" alt="Logo instagram">
+                <img class="logo" src="../imagenes/logo-whatsapp.png" alt="Logo whatsapp">
+                <img class="logo" src="../imagenes/logo-twitter.png" alt="Logo twitter">
+            </div>
+            <p id="aviso-legal">Esta obra está bajo una <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">licencia de Creative Commons  </a></p>
+            <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" alt="imagen-creative"></a>
+        </div>
+    </footer>
+</body>
+</html>

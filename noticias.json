@@ -1,0 +1,19 @@
+
+
+{
+    "noticias": [
+        {
+            "titulo": "El color verde esmeralda, tendencia en el diseño de interiores",
+            "texto": "El color verde esmeralda se ha convertido en una de las tendencias más populares en el diseño de interiores. En la fabricación de muebles, la combinación de este tono con maderas oscuras o metálicos dorados crea ambientes elegantes y sofisticados."
+        },
+        {
+            "titulo": "Muebles multifuncionales, la solución para espacios reducidos",
+            "texto": "En la actualidad, los espacios reducidos son una realidad cada vez más común en hogares y apartamentos. Los muebles multifuncionales se han convertido en la solución perfecta para optimizar el espacio. En nuestra tienda podrás encontrar una amplia variedad de diseños que se adaptan a tus necesidades."
+        },
+        {
+            "titulo": "Muebles de diseño sostenibles, una tendencia en alza",
+            "texto": "La sostenibilidad es una de las tendencias más importantes en el diseño de muebles. En nuestra tienda apostamos por el uso de materiales ecológicos y sostenibles, sin renunciar al diseño y la calidad. Ven a conocer nuestra colección de muebles de diseño sostenible y contribuye a la protección del medio ambiente."
+        }
+    ]
+}
+
